@@ -10,7 +10,8 @@
 - ✅ Works on **iOS** and **Android**  
 - ✅ Uses 'intent:' (Android) and 'x-safari-https:' (iOS) schemes  
 - ✅ Prevents redirect loops with 'sessionStorage'  
-- ✅ Fallback restore if redirect fails  
+- ✅ Fallback restore if redirect fails
+- ✅ Includes debug and opt-out parameters  
 
 ---
 
@@ -21,6 +22,16 @@ You can include it via a script tag or import it into your project.
 ```html
 <script src="open-in-external.js"></script>
 ```
+
+---
+
+## 🧩 Opt-Out Mode
+
+You can skip the redirect entirely by adding `?no_inapp_redirect=1` to your URL.  
+This is useful for debugging or when embedding your page inside another app.
+
+Example:
+`https://yourdomain.com/?no_inapp_redirect=1`
 
 ---
 
